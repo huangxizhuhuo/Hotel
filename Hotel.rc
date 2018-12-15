@@ -1,0 +1,897 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Hotel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Green House.ico"
+IDR_HOTELTYPE           ICON                    "res\\HotelDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "基本操作(&Q)"
+    BEGIN
+        MENUITEM "重登录",                         ID_MENULOGIN
+        MENUITEM "修改登录密码",                      ID_MENUITEM32772
+        MENUITEM "暂时锁屏",                        ID_MENUITEM32773
+        MENUITEM "Windows计算器",                  ID_MENUITEM32774
+        MENUITEM "退出系统(&X)",                    ID_APP_EXIT
+    END
+    POPUP "客房系统(&W)"
+    BEGIN
+        MENUITEM "预订管理",                        ID_MENUITEM32775
+        MENUITEM SEPARATOR
+        MENUITEM "客务中心",                        ID_MENUITEM32776
+        MENUITEM "客人登记",                        ID_MENUITEM32806
+        MENUITEM "离店结账",                        ID_MENUITEM32807
+        MENUITEM "修改房态",                        ID_MENUITEM32777
+        MENUITEM SEPARATOR
+        MENUITEM "客房清单",                        ID_MENUITEM32778
+        MENUITEM "在住客帐务总览",                     ID_MENUITEM32780
+        MENUITEM "历史账务总览",                      ID_MENUITEM32781
+    END
+    POPUP "信息查询(&E)"
+    BEGIN
+        MENUITEM "查询在住客信息",                     ID_MENUITEM32782
+        MENUITEM "查询所有客人资料",                    ID_MENUITEM32783
+        MENUITEM "财务明细查询",                      ID_MENUITEM32784
+        MENUITEM "客房使用明细查询",                    ID_MENUITEM32785
+        MENUITEM "操作日志查询",                      ID_MENUITEM32786
+    END
+    POPUP "报表中心(&R)"
+    BEGIN
+        MENUITEM "每日速览",                        ID_MENUITEM32787
+        MENUITEM "结账实收日报表",                     ID_MENUITEM32788
+    END
+    POPUP "基础资料(&D)"
+    BEGIN
+        MENUITEM "房间设置",                        ID_MENUITEM32789
+        MENUITEM "旅客黑名单",                       ID_MENUITEM32790
+        MENUITEM "VIP会员管理",                     ID_MENUITEM32791
+    END
+    POPUP "系统管理(&S)"
+    BEGIN
+        MENUITEM "操作员账号及权限管理",                  ID_MENUITEM32792
+    END
+    POPUP "系统帮助(&H)"
+    BEGIN
+        MENUITEM "使用说明",                        ID_MENUITEM32793
+        MENUITEM "关于 Hotel(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "新客登记"
+    BEGIN
+        MENUITEM "修改房态",                        ID_MENUITEM32808
+        MENUITEM SEPARATOR
+        MENUITEM "置为空房",                        ID_MENUITEM32795
+        MENUITEM "置为保留",                        ID_MENUITEM32797
+        MENUITEM "置为脏房",                        ID_MENUITEM32796
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Hotel"
+FONT 10, "楷体_GB2312", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Hotel 1.0 版   CS_CUMT",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006 计03-1班",IDC_STATIC,40,25,132,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_Login DIALOG 0, 0, 139, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统登录"
+FONT 12, "楷体_GB2312"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,16,75,46,12
+    PUSHBUTTON      "退出",IDCANCEL,75,75,46,12
+    EDITTEXT        IDC_UserId,56,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PassWd,56,53,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_2,26,56,17,8
+    LTEXT           "用户名",IDC_1,26,36,25,8
+    LTEXT           "酒店住宿管理系统",IDC_STATIC_LoginText,37,15,65,8
+END
+
+IDD_ModifyPasswd DIALOG 0, 0, 166, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 11, "楷体_GB2312"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,72,38,14
+    PUSHBUTTON      "取消",IDCANCEL,101,72,38,14
+    EDITTEXT        IDC_OldPasswd,74,17,50,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "旧密码",IDC_STATIC,40,18,25,8
+    LTEXT           "新密码",IDC_STATIC,40,36,25,8
+    LTEXT           "确认",IDC_STATIC,40,54,17,8
+    EDITTEXT        IDC_NewPasswd,74,35,50,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_InputAgain,74,53,50,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_CUSTOMDJ DIALOG 0, 0, 298, 227
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登记"
+FONT 11, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "登记",IDOK,66,206,48,14
+    PUSHBUTTON      "取消",IDCANCEL,175,206,48,14
+    LTEXT           "主客姓名",IDC_STATIC,121,21,33,8
+    LTEXT           "证件类型",IDC_STATIC,18,40,33,8
+    LTEXT           "证件号码",IDC_STATIC,121,40,33,8
+    LTEXT           "客户账号",IDC_STATIC,18,21,33,8
+    LTEXT           "性别",IDC_STATIC,23,59,17,8
+    LTEXT           "国籍",IDC_STATIC,23,78,17,8
+    LTEXT           "详细住址",IDC_STATIC,121,78,33,8
+    LTEXT           "出生年月",IDC_STATIC,121,59,33,8
+    LTEXT           "备注",IDC_STATIC,23,97,17,8
+    EDITTEXT        IDC_EDIT1,52,19,59,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,158,38,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,158,19,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,132,154,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,158,76,84,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,52,95,154,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,52,38,48,79,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,52,57,34,90,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,52,76,66,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "VIP",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,96,27,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,158,57,54,12
+    PUSHBUTTON      "...",IDC_BUTTON1,207,19,13,12
+    LTEXT           "房号",IDC_STATIC,21,133,17,8
+    COMBOBOX        IDC_COMBO4,50,132,40,111,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "房型",IDC_STATIC,102,133,17,8
+    COMBOBOX        IDC_COMBO5,125,132,50,107,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "单价",IDC_STATIC,182,133,17,8
+    COMBOBOX        IDC_COMBO6,205,131,44,109,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "优惠折扣",IDC_STATIC,14,156,33,8
+    COMBOBOX        IDC_COMBO7,50,154,40,58,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "实际价格",IDC_STATIC,95,156,33,8
+    GROUPBOX        "客人信息",IDC_STATIC,7,7,276,105
+    LTEXT           "付费方式",IDC_STATIC,14,179,33,8
+    COMBOBOX        IDC_COMBO8,50,176,40,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,132,176,39,12,ES_AUTOHSCROLL
+    LTEXT           "预付金额",IDC_STATIC,96,179,33,8
+    LTEXT           "登记时间",IDC_STATIC,174,179,33,8
+    GROUPBOX        "房间",IDC_STATIC,7,120,275,81
+    LTEXT           "登记人",IDC_STATIC,252,78,25,8
+    LTEXT           "Static",IDC_STATIC_Operator,252,97,25,8
+    EDITTEXT        IDC_EDIT10,209,177,71,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "客人类型",IDC_STATIC,243,21,33,8
+    COMBOBOX        IDC_COMBO9,241,38,38,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "钟点房",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,182,156,40,10
+END
+
+IDD_CUSTOMCENTER DIALOG 0, 0, 278, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "客务中心"
+FONT 11, "黑体"
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,219,197,43,11
+    PUSHBUTTON      "客人登记",IDC_BUTTONDJ,219,29,43,11
+    PUSHBUTTON      "离店结账",IDC_BUTTONJZH,219,85,43,11
+    CONTROL         "List1",IDC_LISTFANGTAI,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,28,207,162
+    LTEXT           "房态一览表",IDC_STATIC,7,15,41,8
+    PUSHBUTTON      "刷新房态",IDC_BUTTON1,7,197,43,11
+    PUSHBUTTON      "加开房间",IDC_BUTTON2,219,169,43,11
+    PUSHBUTTON      "调整开房",IDC_BUTTON3,111,197,43,11
+    PUSHBUTTON      "客人换房",IDC_BUTTON4,219,57,43,11
+    PUSHBUTTON      "取消开房",IDC_BUTTON5,163,197,43,11
+    PUSHBUTTON      "预付押金",IDC_BUTTON6,219,113,43,11
+    PUSHBUTTON      "费用转账",IDC_BUTTON7,59,197,43,11
+    PUSHBUTTON      "检索在住客",IDC_BUTTON8,219,141,43,11
+END
+
+IDD_CUSTOMJZH DIALOG 0, 0, 342, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "离店结账"
+FONT 11, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,293,189,42,12
+    PUSHBUTTON      "取消",IDCANCEL,293,211,42,12
+    LTEXT           "客人账号",IDC_STATIC,5,138,33,8
+    CONTROL         "List1",IDC_LISTZF,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,5,3,328,127
+    EDITTEXT        IDC_EDIT1,40,137,69,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,150,137,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,233,137,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,131,162,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,40,162,42,12,ES_AUTOHSCROLL
+    LTEXT           "应付账款",IDC_STATIC,5,163,33,8
+    LTEXT           "已付帐款",IDC_STATIC,92,164,33,8
+    LTEXT           "客人姓名",IDC_STATIC,116,138,33,8
+    LTEXT           "在用房号",IDC_STATIC,197,138,33,8
+    LTEXT           "收款方式",IDC_STATIC,5,188,33,8
+    COMBOBOX        IDC_COMBO2,40,187,43,37,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结账收款",IDC_STATIC,93,190,33,8
+    LTEXT           "余零",IDC_STATIC,180,188,17,8
+    EDITTEXT        IDC_EDIT2,212,187,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,131,187,39,12,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,8,213,17,8
+    EDITTEXT        IDC_EDIT8,35,211,117,12,ES_AUTOHSCROLL
+    LTEXT           "操作时间",IDC_STATIC,159,213,33,8
+    LTEXT           "登记时间",IDC_STATIC,176,163,33,8
+    EDITTEXT        IDC_EDIT10,212,162,72,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "登记员",IDC_STATIC,300,138,25,8
+    LTEXT           "Static",IDC_STATIC_Operator2,300,151,31,8
+    PUSHBUTTON      "已逃账",IDC_BUTTON1,293,167,42,12
+    EDITTEXT        IDC_EDIT9,193,211,91,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CUSTOMYD DIALOGEX 0, 0, 438, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "客人预订"
+FONT 9, "黑体", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,24,360,152
+    PUSHBUTTON      "作废",IDC_BUTTON1,373,84,50,14
+    PUSHBUTTON      "转入住",IDC_BUTTON2,373,35,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON3,373,133,50,14
+    LTEXT           "制单时间",IDC_STATIC,16,190,41,8
+    LTEXT           "预订人",IDC_STATIC,153,190,31,8
+    EDITTEXT        IDC_EDIT1,189,188,51,12,ES_AUTOHSCROLL
+    LTEXT           "客人类型",IDC_STATIC,251,190,40,8
+    COMBOBOX        IDC_COMBO1,293,188,76,98,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "证件类型",IDC_STATIC,16,218,42,8
+    COMBOBOX        IDC_COMBO2,61,216,52,87,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "证件号码",IDC_STATIC,149,218,37,8
+    EDITTEXT        IDC_EDIT2,190,216,53,12,ES_AUTOHSCROLL
+    LTEXT           "联系电话",IDC_STATIC,252,218,38,8
+    EDITTEXT        IDC_EDIT3,294,216,75,12,ES_AUTOHSCROLL
+    LTEXT           "预订房型",IDC_STATIC,16,246,36,8
+    COMBOBOX        IDC_COMBO3,61,244,59,94,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT5,124,244,31,12,ES_AUTOHSCROLL
+    LTEXT           "间",IDC_STATIC,159,246,8,8
+    LTEXT           "预定入住时间",IDC_STATIC,180,246,52,8
+    LTEXT           "预计离店时间",IDC_STATIC,7,274,53,8
+    LTEXT           "保留房间",IDC_STATIC,149,274,40,8
+    COMBOBOX        IDC_COMBO4,190,271,51,76,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "预订说明",IDC_STATIC,252,274,38,8
+    EDITTEXT        IDC_EDIT6,290,271,79,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "新预订",IDC_BUTTON4,7,298,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON5,72,298,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON6,137,298,50,14
+    PUSHBUTTON      "关闭",IDC_BUTTON7,202,298,50,14
+    LTEXT           "登记员",IDC_STATIC,278,301,36,8
+    LTEXT           "Static",IDC_STATIC_Operator1,323,301,43,8
+    EDITTEXT        IDC_EDIT7,61,188,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,241,244,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,61,272,81,12,ES_AUTOHSCROLL
+END
+
+IDD_Lock DIALOG 0, 0, 236, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "锁屏离开"
+FONT 12, "楷体_GB2312"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,185,29,37,14
+    PUSHBUTTON      "强行退出",IDCANCEL,185,13,37,14
+    EDITTEXT        IDC_EDIT1,21,26,154,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "程序当前被锁定，请输入当前用户密码解锁",IDC_STATIC,21,15,153,8
+END
+
+IDD_RoomSet DIALOG 0, 0, 319, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "房间设置"
+FONT 11, "楷体_GB2312"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,19,66,280,154
+    LTEXT           "房号",IDC_STATIC,25,17,17,8
+    LTEXT           "类型",IDC_STATIC,96,17,17,8
+    LTEXT           "位置",IDC_STATIC,169,17,17,8
+    LTEXT           "层号",IDC_STATIC,240,17,17,8
+    LTEXT           "单价",IDC_STATIC,122,40,17,8
+    LTEXT           "钟点房价",IDC_STATIC,207,40,33,8
+    LTEXT           "特征",IDC_STATIC,25,40,17,8
+    EDITTEXT        IDC_EDIT1,44,15,46,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,113,15,51,63,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,191,15,45,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,258,15,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,43,38,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,144,38,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,241,38,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加房间",IDC_BUTTON2,7,225,34,14
+    PUSHBUTTON      "修改房间",IDC_BUTTON3,61,225,34,14
+    PUSHBUTTON      "删除房间",IDC_BUTTON4,115,225,34,14
+    PUSHBUTTON      "刷新房态",IDC_BUTTON5,223,225,34,14
+    PUSHBUTTON      "取消输入",IDC_BUTTON6,169,225,34,14
+    PUSHBUTTON      "关闭",IDC_BUTTON1,277,225,34,14
+    GROUPBOX        "",IDC_STATIC,19,7,280,53
+END
+
+IDD_CUSTOMCHANGEROOM DIALOG 0, 0, 291, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "客人换房"
+FONT 11, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "换房",IDOK,70,208,50,14
+    PUSHBUTTON      "取消",IDCANCEL,160,208,50,14
+    LTEXT           "账单编号",IDC_STATIC,10,13,33,8
+    LTEXT           "登记时间",IDC_STATIC_INTIME,111,13,102,8
+    LTEXT           "登记员",IDC_STATIC_DENGJIYUAN,219,13,65,8
+    LTEXT           "原房号",IDC_STATIC,17,38,25,8
+    LTEXT           "开房时间",IDC_STATIC,90,38,33,8
+    CONTROL         "钟点房",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,36,40,10
+    LTEXT           "单价",IDC_STATIC,19,63,17,8
+    LTEXT           "房间类型",IDC_STATIC,90,63,33,8
+    EDITTEXT        IDC_EDIT5,129,61,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,43,61,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,43,86,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,129,86,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,129,36,79,12,ES_AUTOHSCROLL
+    LTEXT           "主客",IDC_STATIC,18,88,17,8
+    LTEXT           "应收账款",IDC_STATIC,90,88,33,8
+    LTEXT           "已付帐款",IDC_STATIC,175,87,33,8
+    EDITTEXT        IDC_EDIT10,211,86,42,12,ES_AUTOHSCROLL
+    LTEXT           "折扣",IDC_STATIC,18,113,17,8
+    EDITTEXT        IDC_EDIT12,43,111,39,12,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,99,113,17,8
+    EDITTEXT        IDC_EDIT13,129,111,107,12,ES_AUTOHSCROLL
+    LTEXT           "换住房型",IDC_STATIC,14,156,33,8
+    COMBOBOX        IDC_COMBO2,48,154,54,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "换住房间",IDC_STATIC,108,156,33,8
+    COMBOBOX        IDC_COMBO3,141,154,39,83,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "新房价",IDC_STATIC,185,156,25,8
+    EDITTEXT        IDC_EDIT15,213,154,49,12,ES_AUTOHSCROLL
+    LTEXT           "新价起计时间",IDC_STATIC,13,181,49,8
+    EDITTEXT        IDC_EDIT16,62,179,75,12,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,141,181,17,8
+    EDITTEXT        IDC_EDIT17,160,178,106,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO4,43,36,41,107,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "原房",IDC_STATIC,7,28,264,103
+    GROUPBOX        "换房",IDC_STATIC,7,141,265,60
+    LTEXT           "Static",IDC_STATIC_LISTID,44,13,65,8
+END
+
+IDD_JIASHOU DIALOG 0, 0, 276, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加收预付款"
+FONT 11, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "收款",IDOK,74,209,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,209,50,14
+    LTEXT           "",IDC_STATIC_CUSTOMERID,56,19,59,8
+    LTEXT           "登记日期",IDC_STATIC_INTIME,122,19,77,8
+    LTEXT           "",IDC_STATIC_Operator,206,19,63,8
+    LTEXT           "主客",IDC_STATIC,31,44,17,8
+    EDITTEXT        IDC_EDIT1,63,43,42,12,ES_AUTOHSCROLL
+    LTEXT           "类型",IDC_STATIC,123,44,17,8
+    LTEXT           "应收账款",IDC_STATIC,25,70,33,8
+    EDITTEXT        IDC_EDIT3,63,68,42,12,ES_AUTOHSCROLL
+    LTEXT           "已付帐款",IDC_STATIC,114,70,33,8
+    EDITTEXT        IDC_EDIT4,148,68,50,12,ES_AUTOHSCROLL
+    LTEXT           "备注",IDC_STATIC,123,96,17,8
+    CONTROL         "VIP",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,44,27,10
+    EDITTEXT        IDC_EDIT5,151,92,84,12,ES_AUTOHSCROLL
+    LTEXT           "在用房号",IDC_STATIC,26,96,33,8
+    EDITTEXT        IDC_EDIT6,63,93,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,20,33,231,83
+    LTEXT           "收款方式",IDC_STATIC,27,134,33,8
+    GROUPBOX        "",IDC_STATIC,21,120,231,81
+    COMBOBOX        IDC_COMBO2,63,132,46,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "金额",IDC_STATIC,123,134,17,8
+    EDITTEXT        IDC_EDIT8,150,132,85,12,ES_AUTOHSCROLL
+    LTEXT           "收款时间",IDC_STATIC,27,158,33,8
+    EDITTEXT        IDC_EDIT9,63,156,69,12,ES_AUTOHSCROLL
+    LTEXT           "收款说明",IDC_STATIC,27,182,33,8
+    EDITTEXT        IDC_EDIT10,63,180,172,12,ES_AUTOHSCROLL
+    LTEXT           "操作员",IDC_STATIC,140,158,25,8
+    EDITTEXT        IDC_EDIT11,165,156,70,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO3,148,43,51,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "客人账号",IDC_STATIC,20,19,33,8
+END
+
+IDD_QUANXIAN DIALOG 0, 0, 295, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "操作员权限管理"
+FONT 12, "楷体_GB2312"
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,243,167,33,14
+    LTEXT           "登录账号",IDC_STATIC,12,18,33,8
+    EDITTEXT        IDC_EDIT1,48,16,48,12,ES_AUTOHSCROLL
+    LTEXT           "职务",IDC_STATIC,105,18,17,8
+    LTEXT           "备注",IDC_STATIC,187,18,17,8
+    EDITTEXT        IDC_EDIT3,208,16,68,12,ES_AUTOHSCROLL
+    CONTROL         "客房系统",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,41,48,10
+    CONTROL         "信息查询",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,41,48,10
+    CONTROL         "报表中心",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,41,48,10
+    CONTROL         "基础资料",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,41,48,10
+    CONTROL         "系统管理",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,234,41,48,10
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,14,59,263,102
+    PUSHBUTTON      "修改",IDC_BUTTON1,15,167,33,14
+    PUSHBUTTON      "保存",IDC_BUTTON2,72,167,33,14
+    PUSHBUTTON      "取消",IDC_BUTTON3,129,167,33,14
+    PUSHBUTTON      "删除",IDC_BUTTON4,186,167,33,14
+    COMBOBOX        IDC_COMBO1,125,16,53,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Hotel Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Hotel"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "Hotel.EXE"
+            VALUE "ProductName", "Hotel 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_Login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_ModifyPasswd, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_CUSTOMDJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_CUSTOMCENTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_CUSTOMJZH, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 339
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_CUSTOMYD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 427
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_Lock, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_RoomSet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_CUSTOMCHANGEROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_JIASHOU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_QUANXIAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CUSTOMDJ DLGINIT
+BEGIN
+    IDC_COMBO7, 0x403, 1, 0
+"\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xa2c9, 0xcdbf, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xc5cd, 0xd3b6, "\000" 
+    IDC_COMBO9, 0x403, 5, 0
+0xdac4, 0xbfb2, "\000" 
+    0
+END
+
+IDD_CUSTOMYD DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_JIASHOU DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 5, 0
+0xd6cf, 0xf0bd, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xa9c7, 0xa5b5, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xa7d6, 0xb1c6, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xa2c9, 0xcdbf, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xc5cd, 0xd3b6, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xdac4, 0xbfb2, "\000" 
+    0
+END
+
+IDD_QUANXIAN DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xdcd7, 0xadbe, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0xacb3, 0xb6bc, 0xdcb9, 0xedc0, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xd3bd, 0xfdb4, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xf3b4, 0xc3cc, 0xadbe, 0xedc0, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0xb5cf, 0xb3cd, 0xacce, 0xa4bb, 0xb1d4, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xd5ca, 0xf8d2, 0xb1d4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR 49, 41
+BEGIN
+    BUTTON      ID_MENUITEM32775
+    BUTTON      ID_MENUITEM32806
+    BUTTON      ID_MENUITEM32774
+    BUTTON      ID_MENUITEM32807
+    BUTTON      ID_MENUITEM32776
+    BUTTON      ID_MENUITEM32772
+    BUTTON      ID_MENUITEM32773
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+LIST_NORMAL             BITMAP                  "res\\Tool.bmp"
+LIST_DISABLE            BITMAP                  "res\\Tool_d.bmp"
+LIST_HOT                BITMAP                  "res\\Tool_h.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Hotel\n\nHotel\n\n\nHotel.Document\nHotel Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Hotel"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+    ID_INDICATOR_LOGIN      "当前用户"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENUITEM32787        "退房收入，收、退款速览，当日客房状态等"
+    ID_MENUITEM32788        "年月日，结账起数，结账实收小计"
+    ID_MENUITEM32789        "房间设置\n房间设置"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENULOGIN            "重登录"
+    ID_MENUITEM32772        "修改登录密码\n修改密码"
+    ID_MENUITEM32773        "暂时锁屏\n暂时锁屏"
+    ID_MENUITEM32774        "Windows计算器\n计算器"
+    ID_MENUITEM32775        "预订管理\n预订管理"
+    ID_MENUITEM32776        "客务中心\n客务中心"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENUITEM32806        "客人登记\n客人登记"
+    ID_MENUITEM32807        "离店结账\n离店结账"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Hotel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
